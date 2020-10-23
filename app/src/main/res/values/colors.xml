@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#FF9800</color>
+
+
+    <!--    Text Aliases    -->
+    <color name="textPrimary">@color/midnight</color>
+    <color name="textSecondary">@color/charcoal</color>
+    <color name="textTertiary">@color/ash</color>
+    <color name="textInvertedPrimary">@color/lunar</color>
+    <color name="textInvertedSecondary">@color/pearl</color>
+    <color name="textInvertedTertiary">@color/sterling</color>
+    <color name="textError">@color/crimson</color>
+    <color name="textSuccess">@color/shamrock</color>
+</resources>

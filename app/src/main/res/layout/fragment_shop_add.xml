@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".shop.view.FragmentShopAdd">
+
+    <data>
+
+        <variable
+            name="ui"
+            type="com.beershop.adgaon.base.model.UI" />
+
+        <variable
+            name="shop"
+            type="com.beershop.adgaon.shop.model.Shop" />
+    </data>
+
+    <ScrollView
+        style="@style/LayoutMatchParent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutNumber"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edName"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_shop_name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="@={shop.name}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutMobileNumber"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edMobileNumber"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_mobile_number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:text="@={shop.mobileNumber}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    android:layout_marginTop="@dimen/spacing2x"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutAddress"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edAddress"
+                        style="@style/TextInputEditText.Area"
+                        android:hint="@string/hint_address"
+                        android:text="@={shop.address}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAdd"
+                style="@style/OutlinedButton"
+                android:layout_marginTop="@dimen/spacing5x"
+                android:text="@string/buttonAdd" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

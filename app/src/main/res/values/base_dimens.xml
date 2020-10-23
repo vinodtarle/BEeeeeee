@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing  -->
+    <dimen name="spacingHalf">4dp</dimen>
+    <dimen name="spacing1x">8dp</dimen>
+    <dimen name="spacing1nHalf">12dp</dimen>
+    <dimen name="spacing2x">16dp</dimen>
+    <dimen name="spacing3x">24dp</dimen>
+    <dimen name="spacing4x">32dp</dimen>
+    <dimen name="spacing5x">40dp</dimen>
+    <dimen name="spacing7x">56dp</dimen>
+    <dimen name="spacing10x">80dp</dimen>
+    <dimen name="spacing15x">120dp</dimen>
+
+    <!-- Image Icon -->
+    <dimen name="icon_24">24dp</dimen>
+    <dimen name="icon_32">32dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_24">24sp</dimen>
+    <dimen name="text_32">32sp</dimen>
+    <dimen name="text_40">40sp</dimen>
+    <dimen name="text_52">52sp</dimen>
+
+    <!-- Button Dimensions -->
+    <dimen name="buttonMinWidth">140dp</dimen>
+    <dimen name="buttonHeight">55dp</dimen>
+
+    <!-- Other  -->
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+</resources>

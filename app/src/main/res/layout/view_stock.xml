@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="stock"
+            type="com.beershop.adgaon.stock.model.Stock" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:padding="@dimen/spacing1nHalf">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextBody"
+            android:layout_weight="1"
+            android:text="@{stock.item.name}" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

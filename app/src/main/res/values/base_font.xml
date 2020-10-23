@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="font">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="font.essential14">
+        <item name="android:textSize">@dimen/text_14</item>
+    </style>
+
+    <style name="font.minimal14">
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="font.emphasis14">
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font.essential16">
+        <item name="android:textSize">@dimen/text_16</item>
+    </style>
+
+    <style name="font.minimal16">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="font.emphasis16">
+        <item name="android:textSize">@dimen/text_16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font.essential20">
+        <item name="android:textSize">@dimen/text_20</item>
+    </style>
+
+    <style name="font.minimal20">
+        <item name="android:textSize">@dimen/text_20</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="font.emphasis20">
+        <item name="android:textSize">@dimen/text_20</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font.minimal24">
+        <item name="android:textSize">@dimen/text_24</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="font.emphasis24">
+        <item name="android:textSize">@dimen/text_24</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font.minimal32">
+        <item name="android:textSize">@dimen/text_32</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="font.emphasis32">
+        <item name="android:textSize">@dimen/text_32</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="font.minimal40">
+        <item name="android:textSize">@dimen/text_40</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="font.emphasis40">
+        <item name="android:textSize">@dimen/text_40</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

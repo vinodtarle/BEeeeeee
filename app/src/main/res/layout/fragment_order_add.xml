@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sale.view.FragmentSaleAdd">
+
+    <data>
+
+        <variable
+            name="ui"
+            type="com.beershop.adgaon.base.model.UI" />
+
+        <variable
+            name="sale"
+            type="com.beershop.adgaon.sales.model.Sale" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutMatchParent"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing3x">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutNumber"
+                style="@style/TextInputLayout"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edNumber"
+                    style="@style/TextInputEditText"
+                    android:hint="@string/hint_item_number"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:text="@={sale.number}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAddNew"
+                style="@style/ContainedButton"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/spacing2x"
+                android:text="@string/buttonAdd"
+                app:icon="@drawable/ic_baseline_add" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/LayoutMatchParent"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdd"
+            style="@style/OutlinedButton"
+            android:text="@string/buttonAdd" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

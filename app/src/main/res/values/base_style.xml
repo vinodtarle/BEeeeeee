@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Style Layout-->
+    <style name="LayoutWrapContent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutMatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="LayoutMatchParent.Padding">
+        <item name="android:padding">@dimen/spacing3x</item>
+    </style>
+
+    <style name="LayoutSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="LayoutSection.Padding">
+        <item name="android:padding">@dimen/spacing3x</item>
+    </style>
+
+    <style name="LayoutSelection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="FloatingActionButton" parent="LayoutWrapContent">
+        <item name="android:layout_marginEnd">@dimen/spacing2x</item>
+        <item name="android:layout_marginBottom">@dimen/spacing2x</item>
+    </style>
+
+    <style name="ViewHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/one_dp</item>
+        <item name="android:background">@color/sterling</item>
+    </style>
+
+    <style name="ViewVertical">
+        <item name="android:layout_width">@dimen/one_dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/sterling</item>
+    </style>
+
+    <style name="ImageViewHome">
+        <item name="android:layout_width">@dimen/icon_24</item>
+        <item name="android:layout_height">@dimen/icon_24</item>
+    </style>
+
+    <!--Style Edit Text-->
+    <style name="TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextInputEditText.Area">
+        <item name="android:layout_height">@dimen/editTextArea</item>
+        <item name="android:inputType">textCapWords|textMultiLine</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="ExposedDropdownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--Style Button-->
+    <style name="ContainedButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:minWidth">@dimen/buttonMinWidth</item>
+    </style>
+
+    <style name="OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:minWidth">@dimen/buttonMinWidth</item>
+        <item name="strokeColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/buttonHeight</item>
+        <item name="android:minWidth">@dimen/buttonMinWidth</item>
+    </style>
+
+    <!--Style Text-->
+    <style name="HeadingDisplay" parent="font.emphasis40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="HeadingA" parent="font.emphasis32">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+
+    <style name="HeadingB" parent="font.emphasis24">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+    </style>
+
+    <style name="HeadingBMinimal" parent="font.minimal24">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+    </style>
+
+    <style name="HeadingC" parent="font.emphasis20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="HeadingD" parent="font.emphasis16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="SubHeadline" parent="font.essential14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.16</item>
+        <item name="android:textColor">@color/textPrimary</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextDisplay" parent="font.minimal40">
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="TextLeading" parent="font.minimal20">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.23</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="TextBody" parent="font.minimal16">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textSecondary</item>
+        <item name="android:lineSpacingMultiplier">1.22</item>
+    </style>
+
+    <style name="FinePrint" parent="font.essential14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:lineSpacingMultiplier">1.22</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="FinePrintSubtle" parent="font.essential14">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.22</item>
+        <item name="android:textColor">@color/textTertiary</item>
+    </style>
+
+</resources>

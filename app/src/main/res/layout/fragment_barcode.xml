@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
+    style="@style/LayoutMatchParent"
+    android:orientation="vertical"
+    tools:context=".barcode.view.FragmentBarcode">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        style="@style/LayoutMatchParent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <View
+        android:id="@+id/dividerView"
+        style="@style/ViewHorizontal" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtTitle"
+        style="@style/TextLeading"
+        android:layout_marginTop="@dimen/spacing3x"
+        android:gravity="center_horizontal"
+        android:text="@string/str_barcode_detect_message" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtDetails"
+        style="@style/HeadingA"
+        android:layout_marginTop="@dimen/spacing3x"
+        android:layout_marginBottom="@dimen/spacing3x"
+        android:gravity="center_horizontal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonAdd"
+        style="@style/ContainedButton"
+        android:layout_margin="@dimen/spacing3x"
+        android:text="@string/buttonAdd"
+        android:visibility="gone" />
+</androidx.appcompat.widget.LinearLayoutCompat>

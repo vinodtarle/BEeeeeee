@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="sherbet">#faccb2</color>
+    <color name="nemo">#d93923</color>
+    <color name="taffy">#ffbedf</color>
+    <color name="flamingo">#a0148c</color>
+    <color name="willow">#dcebc0</color>
+    <color name="mist">#c0e4e3</color>
+    <color name="peacock">#008381</color>
+    <color name="wisteria">#dcdeed</color>
+    <color name="jacaranda">#5e50bf</color>
+    <color name="shamrock">#008a00</color>
+    <color name="pinot">#7e0221</color>
+    <color name="crimson">#d0021b</color>
+    <color name="white">#ffffff</color>
+    <color name="lunar">#f4f4f4</color>
+    <color name="pearl">#e8e8e8</color>
+    <color name="sterling">#d2d2d2</color>
+    <color name="smoke">#aaaaaa</color>
+    <color name="ash">#757575</color>
+    <color name="charcoal">#414141</color>
+    <color name="midnight">#282828</color>
+    <color name="black">#000000</color>
+    <color name="arctic">#ecf7fe</color>
+    <color name="blizzard">#d8effe</color>
+    <color name="capri">#c5e8fd</color>
+    <color name="sky">#b2e0fd</color>
+    <color name="azure">#0064d2</color>
+    <color name="navy">#001e82</color>
+    <color name="apricot">#FFAD6E</color>
+    <color name="watermelon">#FF7AA3</color>
+    <color name="mint">#7DE0A1</color>
+    <color name="ulysses">#5CD6E0</color>
+    <color name="plum">#570066</color>
+    <color name="azalea">#FF2896</color>
+    <color name="moss">#074F30</color>
+    <color name="frog">#06AC00</color>
+    <color name="cobalt">#0099F8</color>
+
+    <!--    Translucent colors - Light mode      -->
+    <color name="azure_t40">#660064D2</color>
+    <color name="azure_t16">#290064D2</color>
+    <color name="azure_t6">#0F0064D2</color>
+    <color name="crimson_t40">#66D0021B</color>
+    <color name="crimson_t12">#1FD0021B</color>
+    <color name="crimson_t6">#0FD0021B</color>
+    <color name="white_t40">#66FFFFFF</color>
+
+    <!--    DarkModeColors      -->
+    <color name="frost">#60B3F1</color>
+    <color name="duckegg">#96D4FA</color>
+    <color name="leadman">#444444</color>
+    <color name="slate">#3F3F3F</color>
+    <color name="coral">#FFA3A3</color>
+    <color name="lobster">#FF7A7A</color>
+    <color name="lime">#6EDB57</color>
+    <color name="emerald">#57D9C0</color>
+    <color name="periwinkle">#A699EB</color>
+    <color name="candy">#E26BBB</color>
+    <color name="peach">#F39A79</color>
+
+    <!--    Translucent colors - Dark mode      -->
+    <color name="lime_t20">#336EDB57</color>
+    <color name="emerald_t20">#3357D9C0</color>
+    <color name="periwinkle_t20">#33A699EB</color>
+    <color name="candy_t20">#33E26BBB</color>
+    <color name="peach_t20">#33F39A79</color>
+    <color name="duckegg_t40">#6696D4FA</color>
+    <color name="duckegg_t16">#2996D4FA</color>
+    <color name="duckegg_t6">#0F96D4FA</color>
+    <color name="lobster_t40">#66FF7A7A</color>
+    <color name="lobster_t12">#1FFF7A7A</color>
+    <color name="lobster_t6">#0FFF7A7A</color>
+    <color name="caviar_t40">#66121212</color>
+
+    <!--    DarkMode - Elevation Surfaces     -->
+    <color name="caviar">#121212</color>
+    <color name="pitch">#1E1E1E</color>
+    <color name="tar">#232323</color>
+    <color name="onyx">#252525</color>
+    <color name="peppercorn">#272727</color>
+    <color name="inkwell">#2C2C2C</color>
+    <color name="gunpowder">#2F2F2F</color>
+    <color name="graphite">#333333</color>
+    <color name="stardust">#353535</color>
+    <color name="pewter">#383838</color>
+</resources>

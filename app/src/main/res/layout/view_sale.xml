@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="sale"
+            type="com.beershop.adgaon.sales.model.Sale" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:layout_margin="@dimen/spacing1x">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/LayoutSection"
+            android:paddingTop="@dimen/spacing1x"
+            android:paddingBottom="@dimen/spacing1x">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitleNumber"
+                style="@style/HeadingD"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginStart="@dimen/spacing2x"
+                android:text="Order Number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtNumber"
+                style="@style/TextBody"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginStart="@dimen/spacing2x"
+                android:text="@{sale.number}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleNumber" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitleDate"
+                style="@style/HeadingD"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:text="Date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDate"
+                style="@style/TextBody"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:text="@{sale.date}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleDate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitleItemDetails"
+                style="@style/TextBody"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginStart="@dimen/spacing2x"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:text="Total items purchase "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtItemDetails"
+                style="@style/TextBody"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:text="@{String.valueOf(sale.items.size())}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTitleTotal"
+                style="@style/HeadingD"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginStart="@dimen/spacing2x"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:text="Total amount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTitleItemDetails" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTotal"
+                style="@style/SubHeadline"
+                android:layout_width="@dimen/zero_dp"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:layout_marginEnd="@dimen/spacing2x"
+                android:text="@{sale.total}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtItemDetails" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

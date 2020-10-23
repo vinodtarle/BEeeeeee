@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="shop"
+            type="com.beershop.adgaon.shop.model.Shop" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:padding="@dimen/spacing1nHalf">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextBody"
+            android:text="@{shop.name}" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

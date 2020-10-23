@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutBase"
+    style="@style/LayoutMatchParent"
+    android:orientation="vertical"
+    tools:context=".base.view.BaseFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutProgressBar"
+        style="@style/LayoutMatchParent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/LayoutWrapContent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutContent"
+        style="@style/LayoutMatchParent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutError"
+        android:visibility="gone"
+        style="@style/LayoutMatchParent.Padding"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            style="@style/LayoutWrapContent"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonRefresh"
+            style="@style/OutlinedButton"
+            android:layout_marginTop="@dimen/spacing3x"
+            android:text="@string/buttonRefresh" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

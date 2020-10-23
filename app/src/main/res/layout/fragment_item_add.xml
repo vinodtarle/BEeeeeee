@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".item.view.FragmentItemAdd">
+
+    <data>
+
+        <variable
+            name="ui"
+            type="com.beershop.adgaon.base.model.UI" />
+
+        <variable
+            name="item"
+            type="com.beershop.adgaon.item.model.Item" />
+    </data>
+
+    <ScrollView
+        style="@style/LayoutMatchParent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutNumber"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:endIconCheckable="true"
+                    app:endIconDrawable="@drawable/ic_baseline_qr_code_scanner"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edNumber"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_item_number"
+                        android:inputType="number"
+                        android:maxLength="13"
+                        android:singleLine="true"
+                        android:text="@={item.number}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutName"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edName"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_item_name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="@={item.name}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutUnit"
+                    style="@style/ExposedDropdownMenu"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/spUnit"
+                        style="@style/TextInputEditText"
+                        android:editable="false"
+                        android:hint="@string/select_unit"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutType"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/spType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:editable="false"
+                        android:hint="@string/select_type"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutQuantity"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edQuantity"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_type_quantity"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="@={item.quantity}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAdd"
+                style="@style/OutlinedButton"
+                android:layout_marginTop="@dimen/spacing5x"
+                android:text="@string/buttonAdd" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

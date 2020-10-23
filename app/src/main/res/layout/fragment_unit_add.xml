@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".unit.view.FragmentUnitAdd">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="ui"
+            type="com.beershop.adgaon.base.model.UI" />
+
+        <variable
+            name="unit"
+            type="com.beershop.adgaon.unit.model.Unit" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layoutMain"
+        style="@style/LayoutMatchParent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/TextInputLayout"
+                android:layout_weight="1"
+                app:counterEnabled="true"
+                app:counterMaxLength="25">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edUnit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_unit_name"
+                    android:inputType="textCapWords"
+                    android:maxLength="25"
+                    android:singleLine="true"
+                    android:text="@={unit.name}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCancel"
+                style="@style/LayoutWrapContent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="@{ui.update ? View.VISIBLE : View.GONE}" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            style="@style/ViewHorizontal"
+            android:layout_marginTop="10dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            style="@style/LayoutMatchParent"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/spacing2x" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonAdd"
+            style="@style/OutlinedButton"
+            android:text="@string/buttonAdd" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.beershop.adgaon.item.model.Item" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutMain"
+        style="@style/LayoutSelection"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/spacing2x"
+        android:paddingBottom="@dimen/spacing2x">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitleNumber"
+            style="@style/SubHeadline"
+            android:layout_width="@dimen/zero_dp"
+            android:minWidth="@dimen/spacing15x"
+            android:text="Item Number"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtNumber"
+            style="@style/TextBody"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:text="@{item.number}"
+            app:layout_constraintStart_toEndOf="@+id/txtTitleNumber"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitleName"
+            style="@style/SubHeadline"
+            android:layout_width="@dimen/zero_dp"
+            android:minWidth="@dimen/spacing15x"
+            android:text="Item Name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleNumber" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtName"
+            style="@style/TextBody"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:text="@{item.name}"
+            app:layout_constraintStart_toEndOf="@+id/txtTitleName"
+            app:layout_constraintTop_toBottomOf="@+id/txtNumber" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitleQuantity"
+            style="@style/SubHeadline"
+            android:layout_width="@dimen/zero_dp"
+            android:minWidth="@dimen/spacing15x"
+            android:text="Quantity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitleName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtQuantity"
+            style="@style/TextBody"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:minWidth="@dimen/spacing15x"
+            android:text="@{item.quantity}"
+            app:layout_constraintStart_toEndOf="@+id/txtTitleName"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtUnit"
+            style="@style/TextBody"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:text="@{item.unit.name}"
+            app:layout_constraintStart_toEndOf="@+id/txtQuantity"
+            app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Adgaon Beer Wine</string>
+
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="remove">Remove</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="refresh">Refresh</string>
+
+    <!--Limit-->
+    <string name="limit_5">5</string>
+    <string name="limit_10">10</string>
+    <string name="limit_15">15</string>
+    <string name="limit_20">20</string>
+    <string name="limit_25">25</string>
+    <string name="limit_30">30</string>
+    <string name="limit_35">35</string>
+    <string name="limit_50">50</string>
+    <string name="limit_150">150</string>
+    <string name="limit_250">250</string>
+
+    <!--Button-->
+    <string name="buttonAdd">@string/add</string>
+    <string name="buttonEdit">@string/edit</string>
+    <string name="buttonUpdate">@string/update</string>
+    <string name="buttonDelete">@string/delete</string>
+    <string name="buttonSave">@string/save</string>
+    <string name="buttonRemove">@string/remove</string>
+    <string name="buttonYes">@string/yes</string>
+    <string name="buttonNo">@string/no</string>
+    <string name="buttonSubmit">@string/submit</string>
+    <string name="buttonCancel">@string/cancel</string>
+    <string name="buttonNext">@string/next</string>
+    <string name="buttonBack">@string/back</string>
+    <string name="buttonRefresh">@string/refresh</string>
+
+    <!--Success Message-->
+    <string name="success_add">Successfully save.</string>
+    <string name="success_update">Successfully update.</string>
+    <string name="success_delete">Successfully delete.</string>
+    <string name="success_written">Document successfully written!</string>
+    <string name="success_updated">Document successfully updated!</string>
+    <string name="success_deleted">Document successfully deleted!</string>
+
+    <!--Error Message-->
+    <string name="error_add">Enable to save, Try again.</string>
+    <string name="error_update">Enable to update, Try again.</string>
+    <string name="error_delete">Enable to delete, Try again.</string>
+    <string name="error_load">Enable to load, Try again.</string>
+    <string name="error_not_found">No data found</string>
+    <string name="error_listen_failed">Listen failed.</string>
+    <string name="error_written">Error writing document</string>
+    <string name="error_updating">Error updating document</string>
+    <string name="error_deleting">Error deleting document</string>
+
+    <!--Title-->
+    <string name="title_home">Home</string>
+    <string name="title_stock">Stock</string>
+    <string name="title_add_stock">Add Stock</string>
+    <string name="title_unit">Unit</string>
+    <string name="title_item">Items</string>
+    <string name="title_add_item">Add Item</string>
+    <string name="title_supplier">Supplier</string>
+    <string name="title_add_supplier">Add Supplier</string>
+
+    <!--Menu-->
+    <string name="add_unit">Add Unit</string>
+
+    <!--Home Menu-->
+    <string name="str_home_adgaon">Adgaon</string>
+    <string name="str_home_beer_and_wine">Beer And Wine\nShop</string>
+    <string name="str_counter_sale">Counter Sale</string>
+    <string name="str_sale_manual">Sale manual</string>
+    <string name="str_item">Item</string>
+    <string name="str_stock">Stock</string>
+    <string name="str_supplier">Supplier</string>
+
+    <!--Barcode-->
+    <string name="camera_permission">Camera permission is required for detect the barcode. Please allow camera.</string>
+    <string name="str_barcode_detect_message">Please hold mobile in front of barcode.</string>
+
+    <!--Shop-->
+    <string name="hint_shop_name">Shop Name</string>
+
+    <string name="select_unit">Select unit</string>
+    <string name="select_type">Select type</string>
+    <string name="select_supplier">Select supplier</string>
+
+    <string name="hint_date">Date</string>
+    <string name="hint_mobile_number">Mobile number</string>
+    <string name="hint_address">Address</string>
+    <string name="hint_unit_name">Unit Name</string>
+    <string name="hint_supplier_name">Supplier Name</string>
+
+    <string name="hint_item_number">Item number</string>
+    <string name="hint_item_name">Item name</string>
+    <string name="hint_item_type">Item type</string>
+    <string name="hint_item_quantity">Item quantity</string>
+    <string name="hint_type_quantity">Type quantity</string>
+    <string name="hint_bill_number">Bill number</string>
+    <string name="hint_stock_quantity">Stock quantity</string>
+    <string name="hint_mrp">MRP</string>
+    <string name="hint_price">Price</string>
+
+
+    <!--Message-->
+    <string name="msg_item_exits">Item all ready exits.</string>
+    <string name="msg_item_not_found">Item not found, Please add item first.!!!</string>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMatchParent.Padding"
+    android:background="@color/lunar"
+    android:orientation="vertical"
+    tools:context=".dashboard.view.FragmentDashboard">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/LayoutSection"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextAppearance.MaterialComponents.Headline2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_home_adgaon"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            app:fontFamily="@font/dancing_script" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextAppearance.MaterialComponents.Headline3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/str_home_beer_and_wine"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            app:fontFamily="@font/dancing_script" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardSale"
+        style="@style/LayoutSection">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/LayoutSection"
+            android:layout_margin="@dimen/spacingHalf"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/spacingHalf">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ImageViewHome"
+                android:layout_marginTop="@dimen/spacing1x"
+                app:srcCompat="@drawable/ic_baseline_qr_code_scanner"
+                app:tint="@color/colorAccent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextBody"
+                android:layout_marginBottom="@dimen/spacing1x"
+                android:gravity="center_horizontal"
+                android:text="@string/str_counter_sale" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/LayoutSection"
+        android:layout_marginTop="@dimen/spacing1nHalf">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSaleManual"
+            style="@style/LayoutSection"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginEnd="@dimen/spacing1x"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_margin="@dimen/spacing1x"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacingHalf">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewHome"
+                    android:layout_marginTop="@dimen/spacing1x"
+                    app:srcCompat="@drawable/ic_outline_today"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBody"
+                    android:layout_marginBottom="@dimen/spacing1x"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_sale_manual" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardStock"
+            style="@style/LayoutSection"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:layout_marginBottom="@dimen/spacing1x"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_margin="@dimen/spacing1x"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacingHalf">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewHome"
+                    android:layout_marginTop="@dimen/spacing1x"
+                    app:srcCompat="@drawable/ic_baseline_local_grocery_store"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBody"
+                    android:layout_marginBottom="@dimen/spacing1x"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_stock" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/LayoutSection"
+        android:layout_marginTop="@dimen/spacing1nHalf">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardItem"
+            style="@style/LayoutSection"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginEnd="@dimen/spacing1x"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_margin="@dimen/spacing1x"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacingHalf">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewHome"
+                    android:layout_marginTop="@dimen/spacing1x"
+                    app:srcCompat="@drawable/ic_baseline_wine_bar"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBody"
+                    android:layout_marginBottom="@dimen/spacing1x"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_item" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSupplier"
+            style="@style/LayoutSection"
+            android:layout_width="@dimen/zero_dp"
+            android:layout_marginStart="@dimen/spacing1x"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_margin="@dimen/spacing1x"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacingHalf">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/ImageViewHome"
+                    android:layout_marginTop="@dimen/spacing1x"
+                    app:srcCompat="@drawable/ic_baseline_add_business"
+                    app:tint="@color/colorPrimaryDark" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextBody"
+                    android:layout_marginBottom="@dimen/spacing1x"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_supplier" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

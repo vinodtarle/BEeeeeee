@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/fragmentDashboard">
+
+    <fragment
+        android:id="@+id/baseFragment"
+        android:name="com.beershop.adgaon.base.view.BaseFragment"
+        android:label="fragment_base"
+        tools:layout="@layout/fragment_base" />
+
+    <fragment
+        android:id="@+id/fragmentSignIn"
+        android:name="com.beershop.adgaon.auth.view.ActivitySignIn"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.beershop.adgaon.base.view.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/fragmentDashboard"
+        android:name="com.beershop.adgaon.dashboard.view.FragmentDashboard"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/fragmentItem"
+        android:name="com.beershop.adgaon.item.view.FragmentItem"
+        android:label="fragment_item"
+        tools:layout="@layout/fragment_item" />
+
+    <fragment
+        android:id="@+id/fragmentItemAdd"
+        android:name="com.beershop.adgaon.item.view.FragmentItemAdd"
+        android:label="fragment_item_add"
+        tools:layout="@layout/fragment_item_add"></fragment>
+
+    <fragment
+        android:id="@+id/fragmentShop"
+        android:name="com.beershop.adgaon.shop.view.FragmentShop"
+        android:label="fragment_shop_add"
+        tools:layout="@layout/fragment_shop" />
+
+    <fragment
+        android:id="@+id/fragmentShopAdd"
+        android:name="com.beershop.adgaon.shop.view.FragmentShopAdd"
+        android:label="fragment_shop_add"
+        tools:layout="@layout/fragment_shop_add" />
+
+    <fragment
+        android:id="@+id/fragmentUnitAdd"
+        android:name="com.beershop.adgaon.unit.view.FragmentUnitAdd"
+        android:label="fragment_unit_add"
+        tools:layout="@layout/fragment_unit_add">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSupplier"
+        android:name="com.beershop.adgaon.supplier.view.FragmentSupplier"
+        android:label="fragment_supplier"
+        tools:layout="@layout/fragment_supplier" />
+
+    <fragment
+        android:id="@+id/fragmentSupplierAdd"
+        android:name="com.beershop.adgaon.supplier.view.FragmentSupplierAdd"
+        android:label="fragment_supplier_add"
+        tools:layout="@layout/fragment_supplier_add">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentStock"
+        android:name="com.beershop.adgaon.stock.view.FragmentStock"
+        android:label="fragment_stock"
+        tools:layout="@layout/fragment_stock" />
+
+    <fragment
+        android:id="@+id/fragmentStockAdd"
+        android:name="com.beershop.adgaon.stock.view.FragmentStockAdd"
+        android:label="fragment_stock_add"
+        tools:layout="@layout/fragment_stock_add" />
+
+    <fragment
+        android:id="@+id/fragmentSale"
+        android:name="com.beershop.adgaon.sales.view.FragmentSale"
+        android:label="FragmentOrder" />
+
+    <fragment
+        android:id="@+id/fragmentSaleAdd"
+        android:name="com.beershop.adgaon.sales.view.FragmentSaleAdd"
+        android:label="FragmentOrderAdd" />
+
+    <fragment
+        android:id="@+id/fragmentSaleDetails"
+        android:name="com.beershop.adgaon.sales.view.FragmentSaleDetails"
+        android:label="fragment_order_details"
+        tools:layout="@layout/fragment_order_details" />
+
+    <fragment
+        android:id="@+id/fragmentBarcode"
+        android:name="com.beershop.adgaon.barcode.view.FragmentBarcode"
+        android:label="fragment_barcode"
+        tools:layout="@layout/fragment_barcode"></fragment>
+</navigation>

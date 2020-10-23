@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".stock.view.FragmentStockAdd">
+
+    <data>
+
+        <variable
+            name="ui"
+            type="com.beershop.adgaon.base.model.UI" />
+
+        <variable
+            name="stock"
+            type="com.beershop.adgaon.stock.model.Stock" />
+    </data>
+
+    <ScrollView
+        style="@style/LayoutMatchParent"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/layoutMain"
+            style="@style/LayoutSection"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing3x">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutDate"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edDate"
+                        style="@style/TextInputEditText"
+                        android:focusable="false"
+                        android:hint="@string/hint_date"
+                        android:inputType="date"
+                        android:singleLine="true"
+                        android:text="@={ui.date}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutSupplier"
+                    style="@style/ExposedDropdownMenu"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/spSupplier"
+                        style="@style/TextInputEditText"
+                        android:editable="false"
+                        android:hint="@string/select_supplier"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutNumber"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x"
+                    app:endIconCheckable="true"
+                    app:endIconDrawable="@drawable/ic_baseline_qr_code_scanner"
+                    app:endIconMode="custom">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edNumber"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_item_number"
+                        android:inputType="number"
+                        android:maxLength="13"
+                        android:singleLine="true"
+                        android:text="@={stock.item.number}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutName"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edName"
+                        style="@style/TextInputEditText"
+                        android:enabled="false"
+                        android:hint="@string/hint_item_name"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="@={stock.item.name}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutType"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edType"
+                        style="@style/TextInputEditText"
+                        android:enabled="false"
+                        android:hint="@string/hint_item_type"
+                        android:inputType="textCapWords"
+                        android:singleLine="true"
+                        android:text="@={stock.item.unit.name}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutQuantity"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edQuantity"
+                        style="@style/TextInputEditText"
+                        android:enabled="false"
+                        android:hint="@string/hint_item_quantity"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="@={stock.item.quantity}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutQuantity1"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edQuantity1"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_stock_quantity"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="@={stock.quantity}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutMrp"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edMrp"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_mrp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="@={stock.mrp}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                style="@style/LayoutSection"
+                android:layout_marginTop="@dimen/spacing2x"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    style="@style/LayoutWrapContent"
+                    app:srcCompat="@drawable/ic_outline_today" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutPrice"
+                    style="@style/TextInputLayout"
+                    android:layout_marginStart="@dimen/spacing3x">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edPrice"
+                        style="@style/TextInputEditText"
+                        android:hint="@string/hint_price"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:text="@={stock.price}" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonAdd"
+                style="@style/OutlinedButton"
+                android:layout_marginTop="@dimen/spacing5x"
+                android:text="@string/buttonAdd" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

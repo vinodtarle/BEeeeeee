@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "102661950744",
+    "firebase_url": "https://beer-shop-9f74f.firebaseio.com",
+    "project_id": "beer-shop-9f74f",
+    "storage_bucket": "beer-shop-9f74f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:102661950744:android:8f96ee76ac2e369c4a626d",
+        "android_client_info": {
+          "package_name": "com.beershop.adgaon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "102661950744-parrlglro91u4s7804m6umtk4bmsvcts.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6KnjaAxBI0ljEoh4hJ45WTvIRux20K1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "102661950744-parrlglro91u4s7804m6umtk4bmsvcts.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
